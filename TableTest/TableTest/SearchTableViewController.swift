@@ -56,6 +56,7 @@ class SearchTableViewController: UITableViewController {
         let Papername = Papernames[indexPath.row].name
         
         cell.textLabel?.text = Papername
+        cell.detailTextLabel?.text = String(Papernames[indexPath.row].Keyword)
         
         return cell
     }
